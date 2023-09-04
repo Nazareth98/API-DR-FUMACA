@@ -1,0 +1,39 @@
+@use "variables";
+@use "mixins";
+
+* {
+  padding: 0;
+  margin: 0;
+  vertical-align: baseline;
+  list-style: none;
+  border: 0;
+  box-sizing: border-box;
+  color: variables.$color-text;
+  text-decoration: none;
+}
+
+body,
+html {
+  background-color: variables.$color-background;
+  font-family: variables.$font-text;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+  scroll-behavior: smooth;
+  color: variables.$color-text;
+
+  @media (max-width: "60rem") {
+    width: 100%;
+  }
+}
+
+button,
+span,
+a {
+  font-family: variables.$font-text;
+}
+
+input::placeholder {
+  font-family: variables.$font-text;
+}

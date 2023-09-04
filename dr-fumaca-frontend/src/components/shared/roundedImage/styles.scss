@@ -1,0 +1,18 @@
+@use "../../../styles/variables.scss";
+@use "../../../styles/mixins.scss";
+
+.rounded-image {
+  width: 100px; /* Defina a largura desejada para o círculo */
+  height: 100px; /* Defina a altura desejada para o círculo */
+  border-radius: 50%; /* Transforma o elemento em um círculo */
+  overflow: hidden; /* Oculta as partes da imagem fora do círculo */
+  margin: auto;
+  border: 3px solid variables.$color-primary;
+  cursor: pointer;
+}
+
+.rounded-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Redimensiona a imagem para preencher o círculo */
+}

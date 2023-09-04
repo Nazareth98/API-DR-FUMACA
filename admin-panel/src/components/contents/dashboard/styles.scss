@@ -1,0 +1,36 @@
+@use "../../../styles/variables.scss";
+@use "../../../styles/mixins.scss";
+
+.dashboard-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.dashboard-card {
+  @include mixins.boxShadow;
+  background-color: variables.$color-background;
+  width: 280px;
+  border-radius: variables.$border-radius;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+
+  p {
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+
+  span {
+    font-style: italic;
+  }
+}
+
+.dashboard-card-container {
+  @include mixins.inLine;
+  width: 100%;
+  gap: 50px;
+}

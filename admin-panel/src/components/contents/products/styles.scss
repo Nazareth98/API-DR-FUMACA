@@ -1,0 +1,10 @@
+@use "../../../styles/variables.scss";
+@use "../../../styles/mixins.scss";
+
+.products-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}

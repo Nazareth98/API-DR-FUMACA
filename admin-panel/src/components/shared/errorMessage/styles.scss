@@ -1,0 +1,11 @@
+@use "../../../styles/variables.scss";
+
+.error-container {
+  padding: 10px;
+  background-color: rgba(255, 0, 0, 0.384);
+  border-radius: variables.$border-radius;
+}
+
+.error-message {
+  color: rgb(196, 0, 0);
+}

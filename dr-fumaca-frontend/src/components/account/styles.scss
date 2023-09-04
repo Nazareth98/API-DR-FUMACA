@@ -1,0 +1,63 @@
+@use "../../styles/variables.scss";
+@use "../../styles/mixins.scss";
+
+.account-background {
+  min-height: 70vh;
+}
+
+.account-container {
+  margin-top: 70px;
+  padding: 45px 0;
+  height: 100%;
+  display: flex;
+  gap: 50px;
+}
+
+.account-menu-container {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.account-menu-content {
+  width: 80%;
+}
+
+.account-menu-item {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(228, 228, 228);
+  border-radius: variables.$border-radius;
+  border: 3px solid rgb(228, 228, 228);
+
+  transition: 0.2s;
+  cursor: pointer;
+  &:hover {
+    background-color: lighten(rgb(228, 228, 228), 3);
+  }
+}
+
+.account-menu-active {
+  @include mixins.boxShadow;
+  background-color: lighten(rgb(228, 228, 228), 10);
+  border: 3px solid black;
+}
+
+@media (max-width: 60rem) {
+  .account-container {
+    flex-direction: column;
+  }
+  .account-menu-container {
+    flex-direction: row;
+    padding: 0 10px;
+    width: 100%;
+  }
+  .account-menu-item {
+    justify-content: center;
+  }
+  .account-menu-content {
+    width: 100%;
+    padding: 0 10px;
+  }
+}

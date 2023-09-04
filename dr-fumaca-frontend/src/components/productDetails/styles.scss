@@ -1,0 +1,94 @@
+@use "../../styles/variables.scss";
+@use "../../styles/mixins.scss";
+
+.productDetails-container {
+  margin-top: 70px;
+  height: 70vh;
+  padding: 45px 0;
+  display: flex;
+  gap: 50px;
+}
+
+.product-info-container {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  .quantity-container {
+    display: flex;
+    gap: 20px;
+  }
+
+  input {
+    border-radius: variables.$border-radius;
+    padding: 15px;
+    width: 100px;
+  }
+}
+
+.product-images-container {
+  width: 45%;
+}
+
+.selected-image {
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  border-radius: variables.$border-radius;
+}
+
+.thumbnail-images {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+
+  > div {
+    border-radius: variables.$border-radius;
+    width: 130px;
+    height: 130px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    transition: border-color 0.2s ease-in-out;
+
+    &:hover {
+      border-color: #f27d52;
+    }
+  }
+}
+
+@media (max-width: 60rem) {
+  .productDetails-container {
+    flex-direction: column;
+    padding: 0px;
+    height: 100%;
+  }
+  .product-images-container {
+    width: 100%;
+  }
+  .thumbnail-images {
+    padding: 0 5px;
+  }
+  .selected-image {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: variables.$border-radius;
+  }
+  .quantity-container {
+    justify-content: space-between;
+    input {
+      width: 60%;
+    }
+  }
+  .product-info-container {
+    width: 100%;
+    padding: 0 5px 45px;
+  }
+}

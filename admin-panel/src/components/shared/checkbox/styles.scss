@@ -1,0 +1,10 @@
+@use "../../../styles/variables.scss";
+
+.checkbox-container {
+  display: flex;
+  gap: 5px;
+
+  label {
+    color: variables.$color-alternate;
+  }
+}

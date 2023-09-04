@@ -1,0 +1,23 @@
+@use "../../styles/variables.scss";
+@use "../../styles/mixins.scss";
+
+.container {
+  @include mixins.centralizer;
+  height: 100vh;
+}
+
+.singIn-container {
+  @include mixins.boxShadow;
+  padding: 30px;
+  max-width: 500px;
+  border-radius: variables.$border-radius;
+}
+
+.singIn-box {
+  padding-bottom: 20px;
+}
+
+.singIn-title {
+  @include mixins.inLine;
+  gap: 10px;
+}

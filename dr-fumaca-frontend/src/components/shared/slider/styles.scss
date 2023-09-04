@@ -1,0 +1,19 @@
+@use "../../../styles/variables.scss";
+@use "../../../styles/mixins.scss";
+
+.slider-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.slick-slide div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+
+  label {
+    color: variables.$color-alternate;
+  }
+}

@@ -1,0 +1,54 @@
+@use "../../styles/variables.scss";
+@use "../../styles/mixins.scss";
+
+.panel-container {
+  @include mixins.inLine;
+}
+
+.panel-menu {
+  @include mixins.boxShadow;
+  padding: 30px;
+  height: 100vh;
+  min-width: 350px;
+  position: fixed;
+}
+
+.panel-title {
+  @include mixins.inLine;
+  padding-bottom: 20px;
+  gap: 10px;
+}
+
+.item-container {
+  @include mixins.inLine;
+  cursor: pointer;
+  padding: 15px 0;
+  gap: 10px;
+  transition: 0.2s;
+  font-family: variables.$font-text;
+}
+
+.selected {
+  transform: translateX(20px);
+  font-weight: bold;
+}
+
+.panel-content-container {
+  padding: 30px;
+  margin-left: 350px;
+  height: 100vh;
+  width: 100%;
+}
+
+.content-title {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.content-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}

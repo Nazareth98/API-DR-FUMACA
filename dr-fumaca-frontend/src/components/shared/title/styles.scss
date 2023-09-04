@@ -1,0 +1,13 @@
+@use "../../../styles/variables.scss";
+@use "../../../styles/mixins.scss";
+
+.custom-title {
+  font-family: variables.$font-title;
+  font-size: 2rem;
+}
+
+@media (max-width: 60rem) {
+  .custom-title {
+    font-size: 1.5rem;
+  }
+}

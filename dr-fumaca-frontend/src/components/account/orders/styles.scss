@@ -1,0 +1,48 @@
+@use "../../../styles/variables.scss";
+@use "../../../styles/mixins.scss";
+
+.myOrders-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.myOrders-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.myOrders-item {
+  @include mixins.boxShadow;
+  border-radius: variables.$border-radius;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  img {
+    border-radius: variables.$border-radius;
+    width: 150px;
+  }
+}
+
+.myOrders-item-product {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 60rem) {
+  .myOrders-item-product {
+    flex-direction: column;
+  }
+}

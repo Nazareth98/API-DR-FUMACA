@@ -1,0 +1,39 @@
+@use "../../../styles/variables.scss";
+@use "../../../styles/mixins.scss";
+
+.button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: variables.$border-radius;
+  color: variables.$color-background;
+  font-weight: bold;
+  transition: 0.2s;
+  border: 1px solid variables.$color-primary;
+  @include mixins.boxShadow;
+  justify-content: center;
+  display: flex;
+  gap: 5px;
+
+  span {
+    color: variables.$color-background;
+  }
+}
+
+.main-button {
+  background-color: variables.$color-primary;
+  &:hover {
+    background-color: darken($color: variables.$color-secundary, $amount: 10);
+    border: 1px solid variables.$color-secundary;
+  }
+}
+
+.aside-button {
+  color: variables.$color-primary;
+  border: 1px solid variables.$color-primary;
+  &:hover {
+    color: variables.$color-primary;
+    border: 1px solid variables.$color-primary;
+    background-color: darken($color: variables.$color-background, $amount: 10);
+  }
+}

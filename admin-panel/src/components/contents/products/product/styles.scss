@@ -1,0 +1,27 @@
+@use "../../../../styles/variables.scss";
+@use "../../../../styles/mixins.scss";
+
+.product-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.product-prop-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.flavor-card {
+  cursor: pointer;
+  padding: 10px;
+  background-color: variables.$color-alternate;
+  border-radius: variables.$border-radius;
+}
+
+.flavor-card span {
+  color: variables.$color-background;
+}

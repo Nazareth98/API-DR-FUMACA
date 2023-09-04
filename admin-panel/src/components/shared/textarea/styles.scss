@@ -1,0 +1,15 @@
+@use "../../../styles/variables.scss";
+
+.textarea {
+  padding: 20px 10px;
+  width: 100%;
+  border-radius: variables.$border-radius;
+  color: variables.$color-text;
+  margin-bottom: 10px;
+  margin-top: 3px;
+  font-family: variables.$font-text;
+
+  &:focus {
+    outline-color: variables.$color-secundary;
+  }
+}

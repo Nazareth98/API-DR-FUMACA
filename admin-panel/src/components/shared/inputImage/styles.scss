@@ -1,0 +1,48 @@
+@use "../../../styles/variables.scss";
+
+.image-upload-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.images-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.custom-file-input {
+  position: relative;
+  cursor: pointer;
+}
+
+.custom-button {
+  width: 80px;
+  height: 80px;
+  background-color: #f0f0f0;
+  border: 2px solid variables.$color-primary;
+  border-radius: variables.$border-radius;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.custom-button:hover {
+  background-color: #ddd;
+}
+
+.plus-icon {
+  font-size: 24px;
+  font-weight: bold;
+  color: variables.$color-text;
+}
+
+.thumbnail {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: variables.$border-radius;
+}

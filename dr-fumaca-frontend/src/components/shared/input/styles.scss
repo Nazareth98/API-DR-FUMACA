@@ -1,0 +1,22 @@
+@use "../../../styles/variables.scss";
+
+.input {
+  padding: 20px 10px;
+  width: 100%;
+  border-radius: variables.$border-radius;
+  color: variables.$color-text;
+  margin-bottom: 10px;
+  margin-top: 3px;
+
+  &:focus {
+    box-shadow: variables.$color-secundary 0px 2px 5px -1px,
+      variables.$color-secundary 0px 1px 15px -1px;
+    outline-color: variables.$color-secundary;
+    outline-style: outset;
+  }
+}
+
+.label {
+  padding-left: 3px;
+  color: variables.$color-alternate;
+}

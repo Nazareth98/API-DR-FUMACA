@@ -1,0 +1,19 @@
+# Define a versão do EditorConfig
+root = true
+
+# Tamanho da tabulação
+[*]
+indent_style = space
+indent_size = 2
+
+# Define o charset para UTF-8
+[*]
+charset = utf-8
+
+# Remove espaços em branco no final das linhas
+[*]
+trim_trailing_whitespace = true
+
+# Faz com que uma nova linha seja adicionada ao final de cada arquivo
+[*]
+insert_final_newline = true

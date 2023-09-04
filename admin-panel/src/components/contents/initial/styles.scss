@@ -1,0 +1,17 @@
+@use "../../../styles/variables.scss";
+@use "../../../styles/mixins.scss";
+
+.initial-container {
+  @include mixins.centralizer;
+  flex-direction: column;
+  height: 100%;
+  gap: 30px;
+  h2 {
+    text-align: center;
+  }
+}
+
+.initial-section {
+  @include mixins.inLine;
+  gap: 20px;
+}

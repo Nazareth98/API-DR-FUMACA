@@ -1,0 +1,48 @@
+@use "../../styles/variables.scss";
+@use "../../styles/mixins.scss";
+
+.products-container {
+  margin-top: 70px;
+  padding: 45px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 50px;
+  min-height: 100%;
+}
+
+.filters-container {
+  border-radius: variables.$border-radius;
+  background-color: rgb(228, 228, 228);
+  width: 100%;
+  min-height: 100px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.product-images-container {
+  > img {
+    width: 400px;
+    height: 600pxc;
+  }
+}
+
+.products-list-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+@media (max-width: 60rem) {
+  .products-container {
+    padding: 45px 20px;
+  }
+
+  .products-list-container {
+    justify-content: space-around;
+  }
+}

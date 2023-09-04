@@ -1,0 +1,80 @@
+@use "../../styles/variables.scss";
+@use "../../styles/mixins.scss";
+
+.footer-background {
+  background-color: rgb(29, 29, 29);
+  background-image: url("../../assets/images/footer-background.jpg");
+  background-size: cover;
+  background-blend-mode: multiply;
+  width: 100%;
+  height: 350px;
+
+  h3 {
+    color: variables.$color-background;
+  }
+
+  li {
+    margin-bottom: 5px;
+  }
+
+  a {
+    color: variables.$color-alternate;
+    font-weight: bold;
+    transition: 0.2s;
+    &:hover {
+      color: variables.$color-background;
+    }
+  }
+
+  .footer-container {
+    padding: 45px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.credits-background {
+  background-color: variables.$color-text;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  p {
+    color: variables.$color-background;
+  }
+
+  a {
+    color: variables.$color-secundary;
+    font-weight: bold;
+
+    &:hover {
+      color: variables.$color-background;
+    }
+  }
+}
+
+@media (max-width: 60rem) {
+  .footer-background {
+    height: 100%;
+
+    .footer-container {
+      padding: 45px 10px;
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+
+  .credits-background {
+    padding: 10px;
+    p {
+      text-align: center;
+    }
+  }
+}
